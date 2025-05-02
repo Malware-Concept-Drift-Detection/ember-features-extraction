@@ -2,8 +2,8 @@
 
 # EMBER Feature Extraction
 
-![CI status](https://github.com/malware-concept-drift-detection/ember/actions/workflows/check.yml/badge.svg) 
-![Version](https://img.shields.io/github/v/release/malware-concept-drift-detection/ember/ember?style=plastic)
+![CI status](https://github.com/malware-concept-drift-detection/ember-features-extraction/actions/workflows/check.yml/badge.svg) 
+![Version](https://img.shields.io/github/v/release/malware-concept-drift-detection/ember-features-extraction?style=plastic)
 
 
 
