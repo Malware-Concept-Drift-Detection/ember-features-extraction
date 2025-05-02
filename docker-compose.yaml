@@ -1,7 +1,7 @@
 services:
 
   ember-feature-extraction-pipeline:
-    image: ghcr.io/w-disaster/ember:master
+    image: ghcr.io/malware-concept-drift-detection/ember-features-extraction:master
     container_name: ember-feature-extraction-pipeline
     environment:
       MALWARE_DIR_PATH: /usr/input_data/malware/
