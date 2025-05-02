@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "EMBER__Wdis"
+name = "EMBER_CDD__Wdis"
 packages = [
     { include = "ember" },
 ]
