@@ -161,18 +161,19 @@ class SectionInfo(FeatureType):
                     lief_binary.entrypoint - lief_binary.imagebase
                 )
                 if section is None:
-                    raise lief.not_found
+                    raise lief.exception #lief.not_found
                 entry_section = section.name
             else:  # lief < 0.12
                 entry_section = lief_binary.section_from_offset(
                     lief_binary.entrypoint
                 ).name
-        except lief.not_found:
+        except Exception as e: #lief.lief_errors.not_found:
+            print("EXCCC", e, flush=True)
             # bad entry point, let's find the first executable section
             entry_section = ""
             for s in lief_binary.sections:
                 if (
-                    lief.PE.SECTION_CHARACTERISTICS.MEM_EXECUTE
+                    lief.PE.Section.CHARACTERISTICS.MEM_EXECUTE
                     in s.characteristics_lists
                 ):
                     entry_section = s.name
