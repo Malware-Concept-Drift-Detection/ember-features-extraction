@@ -1,3 +1,17 @@
+## [1.0.1](https://github.com/Malware-Concept-Drift-Detection/ember-features-extraction/compare/1.0.0...1.0.1) (2025-05-11)
+
+### Bug Fixes
+
+* lief exception handling ([dc5496c](https://github.com/Malware-Concept-Drift-Detection/ember-features-extraction/commit/dc5496ce1bab11a3f97501da70c02ca325518c64))
+
+### General maintenance
+
+* add env variable for output dataset filename ([9ac4c0c](https://github.com/Malware-Concept-Drift-Detection/ember-features-extraction/commit/9ac4c0c003d4372a87172f5e4012d03e36965834))
+
+### Style improvements
+
+* format code ([08f96ff](https://github.com/Malware-Concept-Drift-Detection/ember-features-extraction/commit/08f96fff09d33410374218a8dc53d9ac40cf2408))
+
 ## 1.0.0 (2025-05-02)
 
 ### ⚠ BREAKING CHANGES
