@@ -103,15 +103,9 @@ def create_ember_dataset():
     logger.info("Feature merging completed.")
 
     # Save the dataframe to a CSV file
-    final_dataset_path = os.environ.get("FINAL_DATASET_DIR")
-    if final_dataset_path is None:
-        final_dataset_path = "dataset"
-
-    malware_dataset_filename = os.path.join(
-        final_dataset_path, "malware_ember_features.csv"
-    )
-    df.to_csv(malware_dataset_filename, index=True, index_label="sha256")
-    logger.info(f"Dataframe of shape {df.shape} saved to {malware_dataset_filename}")
+    final_dataset_filename = os.environ.get("FINAL_DATASET_FILENAME")
+    df.to_csv(final_dataset_filename, index=True, index_label="sha256")
+    logger.info(f"Dataframe of shape {df.shape} saved to {final_dataset_filename}")
     logger.info("Done.")
 
 
